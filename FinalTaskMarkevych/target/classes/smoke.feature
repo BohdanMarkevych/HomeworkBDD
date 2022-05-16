@@ -15,4 +15,3 @@ Feature: Smoke
     Examples:
       | homePage                | keyword     | expectedSum |
       | https://rozetka.com.ua/ | Ноутбук     | 50000       |
-    
