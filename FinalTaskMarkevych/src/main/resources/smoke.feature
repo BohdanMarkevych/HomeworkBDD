@@ -5,7 +5,7 @@ Feature: Smoke
 
   Scenario Outline: Check that sum in cart is lower than expected after buying some product
     Given User opens '<homePage>' page
-    And  User makes search by keyword '<keyword>'
+    When User makes search by keyword '<keyword>'
     And User clicks product sort options button
     And User sorts products by lowest price
     And User adds first product to cart
@@ -15,3 +15,9 @@ Feature: Smoke
     Examples:
       | homePage                | keyword     | expectedSum |
       | https://rozetka.com.ua/ | Ноутбук     | 50000       |
+      | https://rozetka.com.ua/ | Драбина     | 20000       |
+      | https://rozetka.com.ua/ | Телевізор   | 80000       |
+      | https://rozetka.com.ua/ | Холодильник | 40000       |
+      | https://rozetka.com.ua/ | Стілець     | 15000       |
+
+
